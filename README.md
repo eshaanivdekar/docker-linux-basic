@@ -1,182 +1,84 @@
-# &nbsp;DevOps FAT2 – Assignment
+DevOps FAT2 – Assignment
 
+This assignment demonstrates my understanding of Linux commands, Docker, Git/GitHub workflow, and basic DevOps concepts. I created a Dockerfile, built a Docker image, and pushed the project to GitHub.
 
+1. Five DevOps Concepts
 
-This repository contains my DevOps FAT2 assignment, where I demonstrated my understanding of Linux Commands, Docker, and Git/GitHub workflow by creating a Dockerfile, building a Docker image, and pushing the project to GitHub.
+Continuous Integration (CI)
 
+Automatically merging and testing code changes in a shared repository.
 
+Ensures that new code integrates well with the existing codebase.
 
-#### &nbsp;1. Five DevOps Concepts
+Continuous Deployment (CD)
 
+Automatically releasing every successful code change to production.
 
+Reduces manual deployment errors and accelerates delivery.
 
-###### 1\. Continuous Integration (CI)
+Infrastructure as Code (IaC)
 
-&nbsp;  Automatically merging and testing code changes in a shared repository.
+Managing and provisioning infrastructure using code instead of manual steps.
 
+Makes infrastructure consistent, repeatable, and version-controlled.
 
+Containerization
 
-###### 2\. Continuous Deployment (CD)  
+Running applications inside lightweight, isolated containers.
 
-&nbsp;  Automatically releasing every successful code change to production.
+Ensures the application works the same across different environments.
 
+Version Control
 
+Tracking and managing code changes using tools like Git.
 
-###### 3\. Infrastructure as Code (IaC)  
+Enables collaboration, rollback, and history tracking of changes.
 
-&nbsp;  Using code to configure and manage infrastructure instead of manual setup.
+2. How I Completed This Assignment
+Steps Followed
 
-###### 
+Create Project Folder
 
-###### 4\. Containerization  
+Created a folder named docker-linux-basic.
 
-&nbsp;  Running applications inside lightweight, isolated containers to ensure consistency.
+Create Dockerfile
 
+Created a Dockerfile containing basic Linux commands:
+FROM ubuntu:latest
+RUN apt-get update
+CMD ["bash"]
 
+3.Build Docker Image
+docker build -t linux-basic-image .
+docker run -it linux-basic-image
 
-###### 5\. Version Control  
-
-&nbsp;  Tracking and managing code changes using systems like Git.
-
-
-
-#### 2\. Steps I Followed to Complete the Assignment
-
-
-
-###### Step 1 – Create Project Folder
-
-&nbsp;
-
-I created a folder named: `devops`
-
-
-
-###### Step 2 – Created Dockerfile
-
-&nbsp; 
-
-I wrote a Dockerfile containing Linux commands such as:  
-
-
-
-
-
-###### Step 3 – Install \& Fix Docker Desktop
-
-&nbsp;
-
-\- Installed Docker Desktop on Windows  
-
-\- Fixed WSL update issue  
-
-\- Updated WSL using: `wsl --update`  
-
-\- Restarted PC  
-
-\- Started Docker Desktop successfully  
-
-
-
-###### Step 4 – Build Docker Image 
-
-###### I built the image using:  
-
-
-
-```powershell
-
-docker build -t devops-image .
-
-
-
-
-
-###### Step 5 – Initialize Git and Push to GitHub
-
-
-
+4.Initialize Git and Push to GitHub
 git init
-
 git add .
-
-git commit -m "first commit"
-
+git commit -m "Initial commit with Dockerfile and README"
 git branch -M main
+git remote add origin https://github.com/eshaanivdekar/docker-linux-basic.git
+git push -u origin main
 
-git remote add origin git remote add origin https://github.com/eshaanivdekar/docker-linux-basic.git
+5.Push Image to Docker Hub (Public)
+docker login
+docker tag linux-basic-image eshaanivdekar/linux-basic-image:latest
+docker push eshaanivdekar/linux-basic-image:latest
 
+4. What I Learned
 
+Practical Docker skills: writing Dockerfiles, understanding image layers, container isolation.
 
-#### &nbsp;3. What I Learned from This Assignment
+Git/GitHub workflow: commits, branches, remote repositories, version control.
 
-###### 
+DevOps concepts in action: CI/CD ideas, containerization, automation.
 
-###### &nbsp;Docker Concepts
+Linux command usage inside containers.
 
-###### 
+5. Conclusion
 
-How to write a Dockerfile
+This assignment helped me understand a complete DevOps flow:
 
+Write code → Containerize with Docker → Version control using Git → Publish on GitHub → Share Docker image publicly.
 
-
-How images are built in layers
-
-
-
-How containers are isolated and consistent
-
-
-
-&nbsp;Git \& GitHub
-
-
-
-Initializing a repository
-
-
-
-Committing changes
-
-
-
-Working with branches
-
-
-
-Pushing to GitHub
-
-
-
-&nbsp;DevOps Concepts
-
-This activity taught me real DevOps practices:
-
-
-
-Automation
-
-
-
-Version control
-
-
-
-Consistency
-
-
-
-Collaboration
-
-
-
-Using tools like Git and Docker
-
-
-
-#### &nbsp;Conclusion
-
-
-
-This assignment helped me understand a complete DevOps flow: Write code → Containerize with Docker → Version control using Git → Publish on GitHub.
-
+It strengthened my practical knowledge of Linux, Docker, Git, and DevOps practices, which are essential skills for any DevOps engineer.
