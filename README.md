@@ -104,9 +104,7 @@ git commit -m "first commit"
 
 git branch -M main
 
-git remote add origin https://github.com/Dhaneshkoli/devops.git
-
-git push -u origin main
+git remote add origin git remote add origin https://github.com/eshaanivdekar/docker-linux-basic.git
 
 
 
