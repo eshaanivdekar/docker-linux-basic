@@ -1,4 +1,4 @@
-&nbsp;DevOps FAT2 – Assignment
+# &nbsp;DevOps FAT2 – Assignment
 
 
 
@@ -6,45 +6,45 @@ This repository contains my DevOps FAT2 assignment, where I demonstrated my unde
 
 
 
-&nbsp;1. Five DevOps Concepts
+#### &nbsp;1. Five DevOps Concepts
 
 
 
-1\. Continuous Integration (CI)
+###### 1\. Continuous Integration (CI)
 
 &nbsp;  Automatically merging and testing code changes in a shared repository.
 
 
 
-2\. Continuous Deployment (CD)  
+###### 2\. Continuous Deployment (CD)  
 
 &nbsp;  Automatically releasing every successful code change to production.
 
 
 
-3\. Infrastructure as Code (IaC)  
+###### 3\. Infrastructure as Code (IaC)  
 
 &nbsp;  Using code to configure and manage infrastructure instead of manual setup.
 
+###### 
 
-
-4\. Containerization  
+###### 4\. Containerization  
 
 &nbsp;  Running applications inside lightweight, isolated containers to ensure consistency.
 
 
 
-5\. Version Control  
+###### 5\. Version Control  
 
 &nbsp;  Tracking and managing code changes using systems like Git.
 
 
 
-2\. Steps I Followed to Complete the Assignment
+#### 2\. Steps I Followed to Complete the Assignment
 
 
 
-Step 1 – Create Project Folder
+###### Step 1 – Create Project Folder
 
 &nbsp;
 
@@ -52,7 +52,7 @@ I created a folder named: `devops`
 
 
 
-Step 2 – Created Dockerfile
+###### Step 2 – Created Dockerfile
 
 &nbsp; 
 
@@ -62,7 +62,7 @@ I wrote a Dockerfile containing Linux commands such as:
 
 
 
-Step 3 – Install \& Fix Docker Desktop
+###### Step 3 – Install \& Fix Docker Desktop
 
 &nbsp;
 
@@ -78,9 +78,9 @@ Step 3 – Install \& Fix Docker Desktop
 
 
 
-Step 4 – Build Docker Image 
+###### Step 4 – Build Docker Image 
 
-I built the image using:  
+###### I built the image using:  
 
 
 
@@ -92,7 +92,7 @@ docker build -t devops-image .
 
 
 
-Step 5 – Initialize Git and Push to GitHub
+###### Step 5 – Initialize Git and Push to GitHub
 
 
 
@@ -110,13 +110,13 @@ git push -u origin main
 
 
 
-&nbsp;3. What I Learned from This Assignment
+#### &nbsp;3. What I Learned from This Assignment
 
+###### 
 
+###### &nbsp;Docker Concepts
 
-&nbsp;Docker Concepts
-
-
+###### 
 
 How to write a Dockerfile
 
@@ -176,7 +176,7 @@ Using tools like Git and Docker
 
 
 
-&nbsp;Conclusion
+#### &nbsp;Conclusion
 
 
 
