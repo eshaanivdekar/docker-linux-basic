@@ -1,14 +1,8 @@
-# docker-linux-basic
-
-This is my README file created using PowerShell.
+&nbsp;DevOps FAT2 – Assignment
 
 
 
-
-
-&nbsp;Docker Linux Basic
-
-
+This repository contains my DevOps FAT2 assignment, where I demonstrated my understanding of Linux Commands, Docker, and Git/GitHub workflow by creating a Dockerfile, building a Docker image, and pushing the project to GitHub.
 
 
 
@@ -16,109 +10,175 @@ This is my README file created using PowerShell.
 
 
 
-1\. Continuous Integration (CI) 
+1\. Continuous Integration (CI)
 
-&nbsp;  Automating the building and testing of code every time a developer pushes changes.
+&nbsp;  Automatically merging and testing code changes in a shared repository.
 
 
 
-2\. Continuous Deployment (CD) 
+2\. Continuous Deployment (CD)  
 
-&nbsp;  Automatically deploying code to production after passing tests.
+&nbsp;  Automatically releasing every successful code change to production.
 
 
 
-3\. Infrastructure as Code (IaC) 
+3\. Infrastructure as Code (IaC)  
 
-&nbsp;  Managing and provisioning infrastructure using code, e.g., Docker, Terraform.
+&nbsp;  Using code to configure and manage infrastructure instead of manual setup.
 
 
 
-4\. Version Control 
+4\. Containerization  
 
-&nbsp;  Using Git to track changes in code and collaborate with others.
+&nbsp;  Running applications inside lightweight, isolated containers to ensure consistency.
 
 
 
-5\. Containerization  
+5\. Version Control  
 
-&nbsp;  Packaging applications and their dependencies into containers to run consistently across environments.
+&nbsp;  Tracking and managing code changes using systems like Git.
 
 
 
----
+2\. Steps I Followed to Complete the Assignment
 
 
 
-&nbsp;2. Steps and Commands Used
+Step 1 – Create Project Folder
 
+&nbsp;
 
+I created a folder named: `devops`
 
-&nbsp;Folder Setup
 
 
+Step 2 – Created Dockerfile
 
-mkdir C:\\Users\\Acer\\docker-linux-basic
+&nbsp; 
 
-cd C:\\Users\\Acer\\docker-linux-basic
+I wrote a Dockerfile containing Linux commands such as:  
 
 
 
 
 
-3\. How does this help you learn DevOps, Linux, Git, and Docker?
+Step 3 – Install \& Fix Docker Desktop
 
+&nbsp;
 
+\- Installed Docker Desktop on Windows  
 
-DevOps:
+\- Fixed WSL update issue  
 
+\- Updated WSL using: `wsl --update`  
 
+\- Restarted PC  
 
-Learned the concept of containerization and infrastructure as code (IaC).
+\- Started Docker Desktop successfully  
 
 
 
-Understood the workflow of building, running, and versioning applications in a reproducible environment.
+Step 4 – Build Docker Image 
 
+I built the image using:  
 
 
-Linux:
 
+```powershell
 
+docker build -t devops-image .
 
-Practiced Linux commands inside a container without affecting the host OS.
 
 
 
-Learned file management, navigation, and basic shell commands (ls, pwd, cat, etc.).
 
+Step 5 – Initialize Git and Push to GitHub
 
 
-Git:
 
+git init
 
+git add .
 
-Learned version control: adding, committing, and pushing files to GitHub.
+git commit -m "first commit"
 
+git branch -M main
 
+git remote add origin https://github.com/Dhaneshkoli/devops.git
 
-Understood remote repositories, branches, and syncing local changes with a cloud repository.
+git push -u origin main
 
 
 
-Docker:
+&nbsp;3. What I Learned from This Assignment
 
 
 
-Learned to write a Dockerfile, build Docker images, and run containers.
+&nbsp;Docker Concepts
 
 
 
-Practiced copying files into containers and managing images.
+How to write a Dockerfile
 
 
 
-Learned to push images to Docker Hub for public sharing.
+How images are built in layers
 
 
+
+How containers are isolated and consistent
+
+
+
+&nbsp;Git \& GitHub
+
+
+
+Initializing a repository
+
+
+
+Committing changes
+
+
+
+Working with branches
+
+
+
+Pushing to GitHub
+
+
+
+&nbsp;DevOps Concepts
+
+This activity taught me real DevOps practices:
+
+
+
+Automation
+
+
+
+Version control
+
+
+
+Consistency
+
+
+
+Collaboration
+
+
+
+Using tools like Git and Docker
+
+
+
+&nbsp;Conclusion
+
+
+
+This assignment helped me understand a complete DevOps flow: Write code → Containerize with Docker → Version control using Git → Publish on GitHub.
 
